@@ -18,7 +18,7 @@
 
     <div>
         <x-input-label for="lokasi_file" :value="__('Gambar')" />
-        <input class="form-control mt-1 block w-full" accept="image/*" id="lokasi_file" name="lokasi_file" type="file" class="mt-1 block w-full" :value="old('lokasi_file', $foto->lokasi_file)" required autofocus autocomplete="lokasi_file" />
+        <input class="form-control mt-1 block w-full" accept="image/*" id="lokasi_file" name="lokasi_file" type="file" class="mt-1 block w-full" :value="old('lokasi_file', $foto->lokasi_file)"  autofocus autocomplete="lokasi_file" />
         <x-input-error class="mt-2" :messages="$errors->get('lokasi_file')" />
     </div>
 
